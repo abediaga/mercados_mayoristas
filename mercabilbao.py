@@ -62,7 +62,7 @@ def plot_dataframe_mercabilbao(df_mercabilbao):
 
     for producto in df_mercabilbao.index:
         #print(item)
-        dff_producto.loc[producto].T.plot(kind='line', color=(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1)), label=producto, ax=ax, figsize=(12,6))
+        df_mercabilbao.loc[producto].T.plot(kind='line', color=(random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1)), label=producto, ax=ax, figsize=(12,6))
 
     plt.ylabel('Precio más frecuente por Kg')
     ax.legend()
